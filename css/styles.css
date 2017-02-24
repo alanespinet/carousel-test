@@ -1,0 +1,14 @@
+.flipster__item__content {
+  width: 200px;
+  height: 300px;
+  background-color: teal;
+  opacity: .5;
+}
+
+.flipster__item--current .flipster__item__content {
+  opacity: 1;
+}
+
+.flipster--coverflow .flipster__item__content {
+  -webkit-box-reflect: initial !important;
+}

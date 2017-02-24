@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title> Carousel - Test </title>
+
+  <!-- vendor css -->
+  <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap-theme.min.css" />
+  <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="vendor/flipster/jquery.flipster.min.css" />
+
+  <!-- own css -->
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <!-- content here -->
+  <h1>jQuery.Flipster case of study</h1>
+  <h3>This project acts as a starter point in using jQuery.Flipster</h3>
+
+
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="my-flipster">
+          <div class="flipster-item-container">
+            <div class="flipster-item"> <h4>First Text</h4> </div>
+            <div class="flipster-item"> <h4>Second Text</h4> </div>
+            <div class="flipster-item"> <h4>Third Text</h4> </div>
+            <div class="flipster-item"> <h4>Forth Text</h4> </div>
+            <div class="flipster-item"> <h4>Fifth Text</h4> </div>
+          </div>
+        </div>
+      </div><!-- /.col-xs-12 -->
+    </div><!-- /.row -->
+  </div><!-- /.container -->
+
+  <!-- vendor js -->
+  <script src="vendor/jquery/jquery.min.js" charset="utf-8"></script>
+  <script src="vendor/bootstrap/js/bootstrap.min.js" charset="utf-8"></script>
+  <script src="vendor/flipster/jquery.flipster.min.js" charset="utf-8"></script>
+
+
+  <!-- flipster -->
+  <script>
+    $('.my-flipster').flipster({
+      itemContainer: '.flipster-item-container',
+      itemSelector: '.flipster-item',
+      start: 0,
+      spacing: -0.3,
+      scrollwheel: false
+    });
+  </script>
+
+  <!-- own js -->
+  <script src="js/custom-behavior.js" charset="utf-8"></script>
+</body>
+</html>
